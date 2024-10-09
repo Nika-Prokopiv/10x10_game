@@ -1,1 +1,28 @@
-/* You can add global styles to this file, and also import other style files */
+/* styling variables */
+:root {
+  --yellow: #E9BE00;
+  --red: #94001C;
+  --blue: #1D3C6C;
+  --bg-dark-blue: #09121F;
+  --border-blue: #0E1C2F;
+  --bg-blue: #112238;
+  --white: #f8f8ff;
+  --blue-gray: #92B3DD;
+  --border-radius: 16px;
+}
+
+/* global styles */
+html, body {
+  width: 100%;
+  height: 100%;
+  color: var(--white);
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  margin: 0;
+  background-color: var(--bg-dark-blue);
+  font: 1.4em "Verdana", sans-serif;
+}
