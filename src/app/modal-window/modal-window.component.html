@@ -1,0 +1,8 @@
+<div class="modal-backdrop" [ngStyle]="{'visibility': isOpen ? 'visible' : 'hidden'}">
+    <div class="modal-content">
+      <div class="modal-close" (click)="closeModal()">x</div>
+      <h2>Game Over</h2>
+      <div class="result-text">{{getGameResult()}}</div>
+      <button type="button" (click)="closeModal()">OK</button>
+  </div>
+</div>

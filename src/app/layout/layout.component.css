@@ -1,0 +1,10 @@
+.main-container {
+  width: 60%;
+  height: 60%;
+  background-color: var(--bg-blue);
+  border: 2px solid var(--border-blue);
+  border-radius: var(--border-radius);
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
