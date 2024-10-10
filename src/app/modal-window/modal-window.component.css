@@ -1,0 +1,40 @@
+.modal-backdrop {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 990;
+  width: 100%;
+  background-color: #09121fcc;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  margin: 15% auto;
+  width: 30%;
+  height: 40%;
+  min-height: fit-content;
+  background-color: var(--bg-blue);
+  border: var(--border-width) solid var(--border-blue);
+  border-radius: var(--border-radius);
+}
+
+.modal-close {
+  text-align: right;
+  padding-right: 1rem;
+  cursor: pointer;
+}
+
+h2 {
+  text-align: center;
+}
+
+.result-text {
+  padding: 1rem;
+}
+
+button {
+  align-self: center;
+  width: 40%;
+}
