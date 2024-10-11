@@ -1,0 +1,27 @@
+.grid-container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat( 10, 1fr );
+  grid-template-rows: repeat( 10, 1fr );
+  column-gap: 2px;
+  row-gap: 2px;
+}
+.grid-cell {
+  width: 40px;
+  height: 40px;
+  background-color: var(--blue);
+  border: 1px solid var(--bg-blue);
+  border-radius: 4px;
+}
+.grid-cell.active {
+  background-color: var(--yellow);
+}
+
+.grid-cell.success {
+  background-color: var(--green);
+}
+
+.grid-cell.failed {
+  background-color: var(--red);
+}

@@ -1,1 +1,32 @@
-<div class="main-container">The Qubes Game</div>
+<div class="main-container">
+  <h1>The Qubes Game</h1>
+
+  <div class="game-container">
+    <div class="game-field-container">
+      <app-play-field></app-play-field>
+    </div>
+
+    <div class="game-side-container">
+      <div class="score">
+        <h2>Score
+          <span class="user-score">{{score.user}}</span> :
+          <span class="comp-score">{{score.computer}}</span>
+        </h2>
+      </div>
+      <div class="timer">
+        <label for="timer-input">Timer, ms</label>
+        <input type="number"
+               class="timer-input"
+               name="timer"
+               [ngModel]="timerMs"
+               (ngModelChange)="setTimerMs($event)"
+               [disabled]="isGameInProgress"
+               id="timer-input"
+               [min]="minTime"
+               [max]="maxTime">
+      </div>
+      <button type="button"
+              (click)="gameButtonClicked()">{{isGameInProgress ? buttonText.restart_game : buttonText.start_game}}</button>
+    </div>
+  </div>
+</div>
