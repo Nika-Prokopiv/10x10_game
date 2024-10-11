@@ -3,9 +3,9 @@
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 990;
+  z-index: 999;
   width: 100%;
-  background-color: #09121fcc;
+  background-color: var(--modal-backdrop-blue);
 }
 
 .modal-content {
@@ -22,7 +22,7 @@
 
 .modal-close {
   text-align: right;
-  padding-right: 1rem;
+  padding-right: var(--default-spacing);
   cursor: pointer;
 }
 
@@ -31,7 +31,7 @@ h2 {
 }
 
 .result-text {
-  padding: 1rem;
+  padding: var(--default-spacing);
 }
 
 button {
