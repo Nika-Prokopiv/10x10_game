@@ -1,1 +1,5 @@
-<p>playfield works!</p>
+<div class="grid-container">
+  <div class="grid-cell" *ngFor="let cell of fieldCells; trackBy: trackByCells" (click)="handleCellClick(cell)"
+  [ngClass]="{active: cell.isActive, success: cell.isUserSuccess, failed: cell.isUserFailed }"
+  ></div>
+</div>

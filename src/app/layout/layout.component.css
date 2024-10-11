@@ -1,10 +1,67 @@
 .main-container {
-  width: 60%;
-  height: 60%;
+  width: 50%;
+  min-width: min-content;
   background-color: var(--bg-blue);
-  border: 2px solid var(--border-blue);
+  border: var(--border-width) solid var(--border-blue);
   border-radius: var(--border-radius);
-  margin: 2rem auto;
-  padding: 1rem;
+  margin: var(--default-spacing) auto 0;
+  padding: var(--default-spacing);
+}
+
+h1 {
+  margin-top: 0;
+}
+
+.game-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.score {
+  margin: var(--default-spacing);
+}
+.score h2 {
+  margin-right: var(--default-spacing);
+}
+
+.user-score {
+  color: var(--green);
+}
+
+.comp-score {
+  color: var(--red);
+}
+
+.timer {
+  margin: var(--default-spacing);
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.timer label {
+  margin-right: var(--default-spacing);
+}
+
+.timer-input {
+  padding: 0 var(--default-spacing);
+  width: 100px;
+  height: 36px;
+  background-color: var(--blue-gray);
+  color: var(--black);
+  border-radius: var(--border-radius);
+  border: var(--border-width) solid var(--border-blue);
+  outline: none;
+  cursor: pointer;
+}
+
+.timer-input:focus {
+  border-color: var(--blue);
+}
+
+.timer-input:disabled {
+  opacity: 0.5;
 }
 
