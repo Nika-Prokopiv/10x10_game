@@ -21,6 +21,7 @@ h1 {
 .score {
   margin: var(--default-spacing);
 }
+
 .score h2 {
   margin-right: var(--default-spacing);
 }
@@ -63,5 +64,9 @@ h1 {
 
 .timer-input:disabled {
   opacity: 0.5;
+}
+
+.timer-input.invalid {
+  border-color: var(--red);
 }
 

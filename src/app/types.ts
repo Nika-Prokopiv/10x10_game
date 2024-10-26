@@ -12,5 +12,5 @@ export interface PlayFieldCell {
 
 export enum ButtonText {
   start_game = "Start game",
-  restart_game = "Restart"
+  stop_game = "Stop game"
 }
