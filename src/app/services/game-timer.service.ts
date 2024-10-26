@@ -7,7 +7,7 @@ export const DEFAULT_TIMER: number = 3000;
 
 @Injectable({providedIn: "root"})
 export class GameTimerService {
-  private timerTimeInMs: number = DEFAULT_TIMER_MIN;
+  private timerTimeInMs: number = DEFAULT_TIMER;
   private timerSub: Subscription = new Subscription();
   private stop$: Subject<void> = new Subject();
   private start$: Subject<void> = new Subject();

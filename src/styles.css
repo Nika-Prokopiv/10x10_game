@@ -46,3 +46,11 @@ button {
 button:active {
   border-color: var(--yellow);
 }
+
+button:disabled {
+  opacity: 0.6;
+  pointer-events: none;
+}
+small {
+  font-size: 0.6rem;
+}

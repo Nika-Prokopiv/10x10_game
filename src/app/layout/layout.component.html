@@ -14,19 +14,17 @@
         </h2>
       </div>
       <div class="timer">
-        <label for="timer-input">Timer, ms</label>
+        <label for="timer-input">Timer, ms <sup><small>(500-30000)</small></sup></label>
         <input type="number"
                class="timer-input"
                name="timer"
-               [ngModel]="timerMs"
-               (ngModelChange)="setTimerMs($event)"
-               [disabled]="isGameInProgress"
-               id="timer-input"
-               [min]="minTime"
-               [max]="maxTime">
+               [ngClass]="{'invalid': timerInput.invalid}"
+               [formControl]="timerInput"
+               id="timer-input">
       </div>
       <button type="button"
-              (click)="gameButtonClicked()">{{isGameInProgress ? buttonText.restart_game : buttonText.start_game}}</button>
+              [disabled]="timerInput.invalid"
+              (click)="gameButtonClicked()">{{buttonText()}}</button>
     </div>
   </div>
 </div>
